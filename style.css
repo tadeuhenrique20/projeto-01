@@ -1,0 +1,84 @@
+/* título da página */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+
+    margin-bottom: 32px;
+    /* como o h1 é sempre negrito, foi necessário mudar o peso da 
+fonte (font-weight) para "normal". */
+}
+
+
+/* mudando palavra em negrito no título */
+
+h1 span {
+    font-weight: bold;
+    /* "h1 span" foi utilizado para especificar uma parte dentro da 
+tag <h1> no caso, o <span> */
+}
+
+
+/* aplicação de edição em todo "body" do projeto */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    text-align: center;
+    /* text-align centraliza os textos e alguns elementos */
+    margin: 0;
+    /* "margin: 0" faz o body ficar grudado no topo da página */
+}
+
+/* margens e posicionamento de elementos do projeto */
+
+#hero {
+    width: 592px;
+    margin: 0 auto 72px;
+}
+
+#hero img {
+    margin-bottom: 72px;
+}
+
+p, #footer {
+    color:#7D7987;
+
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.line {
+    width: 568px;
+    height: 0px;
+
+    margin: 0 auto 8px;
+
+    border: 1px solid #ECEFF2;
+    /* utilizando o atributo class pode repetir o elementos 
+    várias vezes copiando o comando, para "class" usa "." */
+}
+
+#footer a + a {
+    margin-left: 28px;
+    /* a + a pega a tag <a> que possui uma tag <a> anterior e
+aplica nas duas */
+}
+
+span, a {
+    color:#FF9900;
+    /* propriedes iguais podem ser agrupadas com vírgula "span, a" ou ainda 
+aplicar "body" para todo o corpo receber a formatação */
+}
+
+/* ajuste das bolinhas no canto inferior da página */
+
+#balls {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    /* dessa forma o elemento ficou grudado na base da página
+    e grudado no lado direito da página */
+}
+
